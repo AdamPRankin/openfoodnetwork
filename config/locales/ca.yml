@@ -61,11 +61,6 @@ ca:
             using_producer_stock_settings_but_count_on_hand_set: "ha d'estar en blanc perquè s'utilitza la configuració d'estoc de la productora"
             on_demand_but_count_on_hand_set: "ha d'estar en blanc si és sota demanda"
             limited_stock_but_no_count_on_hand: "cal especificar-se perquè força existències limitades"
-  errors:
-    messages:
-      file_size_out_of_range: "la mida %{file_size} no és entre el rang necessari"
-      limit_out_of_range: "el total està fora del marge"
-      image_metadata_missing: "no és una imatge vàlida"
   stripe:
     error_code:
       incorrect_number: "El número de la targeta és incorrecte."
@@ -819,6 +814,7 @@ ca:
           sells_tip: "Cap: l'organització no ven als clients directament. <br /> Propietari: l'organització ven productes propis als clients. <br /> Qualsevol: l'organització pot vendre productes propis o d'altres empreses. <br />"
           visible_in_search: Visible a la cerca?
           visible: Públic
+        permalink:
           permalink: Permalink (sense espais)
           permalink_tip: "Aquest enllaç permanent s'utilitza per crear l'url a la vostra botiga: %{link} el-nom-de-la-vostra-botiga /botiga"
           link_to_front: Enllaç a la botiga
@@ -2409,6 +2405,8 @@ ca:
   report_header_tax_on_delivery: "Impost sobre el lliurament (%{currency_symbol})"
   report_header_tax_on_fees: "Impost sobre les comissions (%{currency_symbol})"
   report_header_total_tax: "Impost total (%{currency_symbol})"
+  report_header_total_excl_tax: "Total excl. impostos (%{currency_symbol})"
+  report_header_total_incl_tax: "Total incl. impostos (%{currency_symbol})"
   report_header_enterprise: Organització
   report_header_customer: Consumidora
   report_header_customer_code: Codi de la consumidora
@@ -3843,6 +3841,8 @@ ca:
         connection_failed: "No s'ha pogut connectar a PayPal."
         generic_error: "PayPal ha fallat. %{reasons}"
     users:
+      api_keys:
+        regenerate_key: "Regenerar la clau"
       form:
         account_settings: Configuració del compte
       show:

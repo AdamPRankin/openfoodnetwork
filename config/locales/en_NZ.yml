@@ -61,27 +61,6 @@ en_NZ:
             using_producer_stock_settings_but_count_on_hand_set: "must be blank because using producer stock settings"
             on_demand_but_count_on_hand_set: "must be blank if on demand"
             limited_stock_but_no_count_on_hand: "must be specified because forcing limited stock"
-  errors:
-    messages:
-      content_type_invalid: "has an invalid content type"
-      file_size_out_of_range: "size %{file_size} is not between required range"
-      limit_out_of_range: "total number is out of range"
-      image_metadata_missing: "is not a valid image"
-      dimension_min_inclusion: "must be greater than or equal to %{width} x %{height} pixel."
-      dimension_max_inclusion: "must be less than or equal to %{width} x %{height} pixel."
-      dimension_width_inclusion: "width is not included between %{min} and %{max} pixel."
-      dimension_height_inclusion: "height is not included between %{min} and %{max} pixel."
-      dimension_width_greater_than_or_equal_to: "width must be greater than or equal to %{length} pixel."
-      dimension_height_greater_than_or_equal_to: "height must be greater than or equal to %{length} pixel."
-      dimension_width_less_than_or_equal_to: "width must be less than or equal to %{length} pixel."
-      dimension_height_less_than_or_equal_to: "height must be less than or equal to %{length} pixel."
-      dimension_width_equal_to: "width must be equal to %{length} pixel."
-      dimension_height_equal_to: "height must be equal to %{length} pixel."
-      aspect_ratio_not_square: "must be a square image"
-      aspect_ratio_not_portrait: "must be a portrait image"
-      aspect_ratio_not_landscape: "must be a landscape image"
-      aspect_ratio_is_not: "must have an aspect ratio of %{aspect_ratio}"
-      aspect_ratio_unknown: "has an unknown aspect ratio"
   stripe:
     error_code:
       incorrect_number: "The card number is incorrect."
@@ -888,6 +867,7 @@ en_NZ:
           visible: Public
           not_visible: Hidden
           hidden: Hide all references
+        permalink:
           permalink: Permalink (no spaces)
           permalink_tip: "This permalink is used to create the url to your shop: %{link}your-shop-name/shop"
           link_to_front: Link to shop front
@@ -2554,6 +2534,8 @@ en_NZ:
   report_header_tax_on_delivery: "Tax on Delivery (%{currency_symbol})"
   report_header_tax_on_fees: "Tax on Fees (%{currency_symbol})"
   report_header_total_tax: "Total Tax (%{currency_symbol})"
+  report_header_total_excl_tax: "Total excl. tax (%{currency_symbol})"
+  report_header_total_incl_tax: "Total incl. tax (%{currency_symbol})"
   report_header_enterprise: Enterprise
   report_header_customer: Customer
   report_header_customer_code: Customer Code
@@ -3924,6 +3906,8 @@ en_NZ:
         connection_failed: "Could not connect to PayPal."
         generic_error: "PayPal failed. %{reasons}"
     users:
+      api_keys:
+        regenerate_key: "Regenerate Key"
       form:
         account_settings: Account Settings
       show:

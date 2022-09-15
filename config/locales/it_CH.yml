@@ -855,6 +855,7 @@ it_CH:
           sells_tip: "Nessuno -  L'azienda non vende direttamente ai clienti.<br />Proprio - L'azienda vende i propri prodotti ai clienti.<br />Proprio e altrui - L'azienda può vendere prodotti propri o di altre aziende.<br />"
           visible_in_search: Visibile nella ricerca?
           visible: Pubblica
+        permalink:
           permalink: Permalink (nessuno spazio)
           permalink_tip: "Questo permalink serve a creare l'url al tuo negozio: %{link}nome-del-tuo-negozio/negozio"
           link_to_front: Link alla tua vetrina
@@ -2511,6 +2512,8 @@ it_CH:
   report_header_tax_on_delivery: "Oneri sulla consegna (%{currency_symbol})"
   report_header_tax_on_fees: "Oneri sulle provvigioni (%{currency_symbol})"
   report_header_total_tax: "Oneri totali (%{currency_symbol})"
+  report_header_total_excl_tax: "Totale imponibile (%{currency_symbol})"
+  report_header_total_incl_tax: "Totale IVA incl. (%{currency_symbol})"
   report_header_enterprise: Azienda
   report_header_customer: Cliente
   report_header_customer_code: Codice Cliente
@@ -3979,6 +3982,8 @@ it_CH:
         connection_failed: "Non riesco a collegarmi a PayPal"
         generic_error: "PayPal fallito. %{reasons}"
     users:
+      api_keys:
+        regenerate_key: "Rigenera chiave"
       form:
         account_settings: Impostazioni account
       show:

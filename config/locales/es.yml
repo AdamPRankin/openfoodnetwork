@@ -61,13 +61,6 @@ es:
             using_producer_stock_settings_but_count_on_hand_set: "debe estar en blanco porque estás usando la configuración de estoc de la productora"
             on_demand_but_count_on_hand_set: "debe estar en blanco si está bajo demanda"
             limited_stock_but_no_count_on_hand: "se debe especificar porque se ha definido estoc limitado"
-  errors:
-    messages:
-      content_type_invalid: "Tiene un tipo de contenido invalido"
-      limit_out_of_range: "El número total está fuera de rango"
-      image_metadata_missing: "no es una imagen valida"
-      aspect_ratio_not_square: "la imagen tiene que ser cuadrada"
-      aspect_ratio_not_portrait: "la imagen tiene que ser un retrato"
   stripe:
     error_code:
       incorrect_number: "El número de tarjeta es incorrecto."
@@ -853,6 +846,7 @@ es:
           sells_tip: "Ninguno - La organización no vende directamente a los consumidores.<br />Popios - La organización vende sus propios productos a los consumidores.<br />Cualquiera -  La organización vende sus propios productos o de otros.<br />"
           visible_in_search: ¿Visible en la búsqueda?
           visible: Pública
+        permalink:
           permalink: Permalink (sin espacios)
           permalink_tip: "Se usa para crear la URL de tu tienda: %{link}nombre-de-tu-tienda/shop"
           link_to_front: Link a la tienda
@@ -2503,6 +2497,8 @@ es:
   report_header_tax_on_delivery: "Impuestos sobre la entrega (%{currency_symbol})"
   report_header_tax_on_fees: "Impuesto sobre las comisiones (%{currency_symbol})"
   report_header_total_tax: "Total Impuestos (%{currency_symbol})"
+  report_header_total_excl_tax: "Total Impuestos excl. (%{currency_symbol})"
+  report_header_total_incl_tax: "Total Impuestos incl. (%{currency_symbol})"
   report_header_enterprise: Organización
   report_header_customer: Consumidora
   report_header_customer_code: Código de consumidora
@@ -3965,6 +3961,8 @@ es:
         connection_failed: "No se pudo conectar a PayPal."
         generic_error: "PayPal falló. %{reasons}"
     users:
+      api_keys:
+        regenerate_key: "Regenerar llave"
       form:
         account_settings: Configuración de la cuenta
       show:

@@ -22,6 +22,9 @@ class SplitCheckoutController < ::BaseController
   def edit
     redirect_to_step_based_on_order unless params[:step]
     check_step if params[:step]
+    recalculate_tax if params[:step] == "summary"
+
+    flash_error_when_no_shipping_method_available if available_shipping_methods.none?
   end
 
   def update
@@ -45,6 +48,10 @@ class SplitCheckoutController < ::BaseController
   end
 
   private
+
+  def flash_error_when_no_shipping_method_available
+    flash[:error] = I18n.t('split_checkout.errors.no_shipping_methods_available')
+  end
 
   def clear_invalid_payments
     @order.payments.with_state(:invalid).delete_all
@@ -154,5 +161,10 @@ class SplitCheckoutController < ::BaseController
     when "payment"
       redirect_to checkout_step_path(:payment) if params[:step] == "summary"
     end
+  end
+
+  def recalculate_tax
+    @order.create_tax_charge!
+    @order.update_order!
   end
 end

@@ -131,7 +131,7 @@ gem 'flipper'
 gem 'flipper-active_record'
 gem 'flipper-ui'
 
-gem "view_component", require: "view_component/engine"
+gem "view_component"
 
 group :production, :staging do
   gem 'ddtrace'
@@ -178,7 +178,7 @@ group :development do
   gem 'spring-commands-rspec'
   gem 'web-console'
 
-  gem "view_component_storybook", require: "view_component/storybook/engine"
+  gem "view_component_storybook"
 
   gem 'rack-mini-profiler', '< 3.0.0'
 end

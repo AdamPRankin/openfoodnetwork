@@ -779,6 +779,7 @@ tr:
           sells_tip: "Satış Yapmıyor - İşletme müşterilere doğrudan satış yapmaz. <br /> Kendi Ürünleri - İşletme müşterilerine kendi ürünlerini satar. <br /> Kendi ve/veya başkasının ürünleri - İşletme kendi ürünlerini ve/veya diğer işletmelerin ürünlerini satabilir. <br />"
           visible_in_search: ARAMADA GÖRÜNÜR MÜ?
           visible: Herkese açık
+        permalink:
           permalink: Bağlantı Adı (boşluk yok)
           permalink_tip: "Bağlantı adı, mağazanızın bağlantı URL'sini oluşturmak için kullanılır: %{link}sectiginiz-ad/dükkan"
           link_to_front: Dükkan linkiniz
@@ -2399,6 +2400,8 @@ tr:
   report_header_tax_on_delivery: "Teslimat Vergisi (%{currency_symbol})"
   report_header_tax_on_fees: "Ücretler Vergisi (%{currency_symbol})"
   report_header_total_tax: "Toplam Vergi (%{currency_symbol})"
+  report_header_total_excl_tax: "Vergi Hariç Toplam (%{currency_symbol})"
+  report_header_total_incl_tax: "Vergi Dahil Toplam (%{currency_symbol})"
   report_header_enterprise: İşletme
   report_header_customer: Müşteri
   report_header_customer_code: Müşteri kodu
@@ -3830,6 +3833,8 @@ tr:
         connection_failed: "PayPal'a bağlanılamadı."
         generic_error: "PayPal başarısız oldu. %{reasons}"
     users:
+      api_keys:
+        regenerate_key: "Anahtarı Yeniden Oluştur"
       form:
         account_settings: Hesap Ayarları
       show:

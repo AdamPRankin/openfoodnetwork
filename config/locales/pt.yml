@@ -763,6 +763,7 @@ pt:
           sells_tip: "Nenhum - a organização não vende directamente aos consumidores. <br /> Próprio - a organização vende os seus próprios produtos aos consumidores. <br /> Qualquer - a organização vende os seus próprios produtos ou produtos de outras organizações. <br />"
           visible_in_search: Visível na pesquisa?
           visible: Público
+        permalink:
           permalink: Permalink (sem espaços)
           permalink_tip: "Este link é usado para criar o URL para a sua loja: %{link}nome-loja/loja"
           link_to_front: Link para a loja
@@ -2264,6 +2265,8 @@ pt:
   report_header_tax_on_delivery: "Imposto sobre a Entrega (%{currency_symbol})"
   report_header_tax_on_fees: "Imposto sobre honorários (%{currency_symbol})"
   report_header_total_tax: "Total de Impostos (%{currency_symbol})"
+  report_header_total_excl_tax: "Total excl. impostos (%{currency_symbol})"
+  report_header_total_incl_tax: "Total incl. impostos (%{currency_symbol})"
   report_header_enterprise: Organização
   report_header_customer: Consumidor
   report_header_customer_code: Código de Consumidor

@@ -60,9 +60,6 @@ fr_BE:
             using_producer_stock_settings_but_count_on_hand_set: "doit être vide car les paramètres de stock du producteur sont utilisés"
             on_demand_but_count_on_hand_set: "doit être vide si à la demande"
             limited_stock_but_no_count_on_hand: "doit être spécifié car le stock limité est forcé"
-  errors:
-    messages:
-      image_metadata_missing: "n'est pas une image valide"
   stripe:
     error_code:
       incorrect_number: "Le numéro de carte est incorrect."
@@ -735,6 +732,7 @@ fr_BE:
           visible: Visible par tous
           not_visible: Invisible
           hidden: Masquer toutes les références
+        permalink:
           permalink: Nom pour URL (sans espace)
           permalink_tip: "Ce nom permanent est utilisé pour créer l'url de votre comptoir: %{link}ma-boutique/shop"
           link_to_front: Lien URL du comptoir
@@ -2308,6 +2306,8 @@ fr_BE:
   report_header_tax_on_delivery: "TVA sur livraison (%{currency_symbol})"
   report_header_tax_on_fees: "TVA sur commission hub (%{currency_symbol})"
   report_header_total_tax: "Total TVA (%{currency_symbol})"
+  report_header_total_excl_tax: "Total HT (%{currency_symbol})"
+  report_header_total_incl_tax: "Total TTC (%{currency_symbol})"
   report_header_enterprise: Entreprise
   report_header_customer: Client
   report_header_customer_code: Code acheteur
@@ -3548,6 +3548,8 @@ fr_BE:
     paypal:
       refund_amount: "Quantité"
     users:
+      api_keys:
+        regenerate_key: "Regénération de clé"
       form:
         account_settings: Paramètres du Compte
       show:
